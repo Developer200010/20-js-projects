@@ -1,0 +1,93 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    height: 100vh;
+    background: #272626;
+    color: white;;
+}
+
+.btn{
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background: #49c9ed;
+    display:inline-block ;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    letter-spacing: 0.1rem;
+    background: #000;
+    border: 2px solid white;
+}
+
+#newLetter{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(11, 178, 244);
+    z-index:1000;
+    width: 450px;
+    padding: 80px 50px 50px;
+    transition: 0.5s;
+    border-radius: 5px;
+    visibility: hidden;
+    
+}
+
+#newLetter.active{
+    visibility: visible;
+    top: 50%;
+}
+
+#newLetter{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+#newLetter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button{
+    width: 100%;
+    border: 1px solid black;
+    padding: 15px;
+    outline: none;
+    font-size: 1rem;
+    font-family: serif;
+}
+
+button{
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: #00f3f3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    top:50px;
+    right: 20px;
+}
